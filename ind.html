@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zodiac Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Zodiac Sign Finder</h1>
+    <form id="zodiacForm">
+      <div class="question">
+        <label>What month were you born in?</label>
+        <select id="month">
+          <option value="">--Select--</option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>Which day were you born?</label>
+        <input type="number" id="day" min="1" max="31" />
+      </div>
+
+      <div class="question">
+        <label>Pick a trait that best describes you:</label>
+        <select id="trait">
+          <option value="leader">Leader</option>
+          <option value="loyal">Loyal</option>
+          <option value="creative">Creative</option>
+          <option value="practical">Practical</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>Are you more introverted or extroverted?</label>
+        <select id="personality">
+          <option value="introvert">Introvert</option>
+          <option value="extrovert">Extrovert</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>Choose your element:</label>
+        <select id="element">
+          <option value="fire">Fire</option>
+          <option value="earth">Earth</option>
+          <option value="air">Air</option>
+          <option value="water">Water</option>
+        </select>
+      </div>
+
+      <button type="submit">Find My Zodiac</button>
+    </form>
+
+    <div id="result" class="result" style="display:none;">
+      <h2>Your Zodiac Sign is <span id="signName"></span> <span id="signSymbol"></span></h2>
+      <img id="signImage" src="" alt="Zodiac Image" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
